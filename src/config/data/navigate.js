@@ -10,9 +10,14 @@ export const Navigate = [
         active: 'about',
     },
     {
-        name: 'Projects',
-        to: '#project',
-        active: 'project',
+        name: 'Skills',
+        to: '#skill',
+        active: 'skill',
+    },
+    {
+        name: 'Hobbies/Interests',
+        to: '#hobbies',
+        active: 'hobbies',
     },
     {
         name: 'Resume',

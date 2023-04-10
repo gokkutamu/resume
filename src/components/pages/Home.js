@@ -8,7 +8,7 @@ import { useInfo } from '../../config/data/info';
 
 export default function Home() {
     return (
-        <Div.Grid item className="home full-screen d-lg-flex justify-content-center align-items-center" id="home">
+        <Div.Grid item className="home pt-10" id="home">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-5 col-md-12 col-12">

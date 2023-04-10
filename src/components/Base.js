@@ -5,6 +5,8 @@ import Navbar from './layouts/navbar';
 import About from './pages/About';
 import Resume from './pages/Resume';
 import Home from './pages/Home';
+import Pr from './pages/Pr';
+import Contact from './pages/Contact';
 import Footer from './layouts/footer';
 
 export default function Base() {
@@ -39,13 +41,15 @@ export default function Base() {
 
     return (
         <Div.Box className={darkMode ? 'dark' : 'light'}>
+            <Navbar darkMode={darkMode} click={handleToggleDarkMode} />
             <Div.Grid>
-                <Navbar darkMode={darkMode} click={handleToggleDarkMode} />
                 <Home />
                 <About />
                 <Resume />
-                <Footer />
+                <Pr />
+                <Contact />
             </Div.Grid>
+            <Footer />
         </Div.Box>
     );
 }

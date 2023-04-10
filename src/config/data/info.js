@@ -6,6 +6,7 @@ export const useInfo = {
     position: 'Web Developer',
     nameGithub: 'gokkutamu',
     download: 'Download Resume',
+    bio: "Hello! I'm Tam (Goku). I'm a Web Developer.I studied IT at CD Cong Nghe Thu Duc, I enjoy building web applications and learning new technologies.I love to travel and explore new places. I'm currently based in Vietnamese.",
     miniBio: [
         {
             emoji: '🏴󠁶󠁮󠁳󠁧󠁿',
@@ -37,7 +38,6 @@ export const useInfo = {
             label: 'linkedin',
         },
     ],
-    bio: "Hello! I'm Tam (Goku). I'm a Web Developer.I studied IT at CD Cong Nghe Thu Duc, I enjoy building web applications and learning new technologies.I love to travel and explore new places. I'm currently based in Vietnamese.",
     skills: {
         languages: ['PHP', 'JavaScript', 'HTML/CSS'],
         formalLanguages: ['Typescript', 'Java'],
@@ -77,5 +77,43 @@ export const useInfo = {
             emoji: '✈️',
         }
     ],
+    projects: {
+        experiences: [
+            {
+                name_pr: 'PR01',
+                content: 'You can freely use Tooplate templates for your business or personal sites. Suspendisse sollicitudin libero et tincidunt scelerisque.',
+                position: 'ABC',
+                year: '2022',
+                topics: ['A', 'B', 'C']
+            },
+            {
+                name_pr: 'PR02',
+                content: 'You can freely use Tooplate templates for your business or personal sites. Suspendisse sollicitudin libero et tincidunt scelerisque.',
+                position: 'ABC',
+                year: '2023',
+                topics: []
+            }
+        ],
+        educations: [
+            {
+                name_pr: 'PR03',
+                content: 'You can freely use Tooplate templates for your business or personal sites. Suspendisse sollicitudin libero et tincidunt scelerisque.',
+                position: 'ABC',
+                year: '2020',
+                topics: []
+            },
+            {
+                name_pr: 'PR04',
+                content: 'You can freely use Tooplate templates for your business or personal sites. Suspendisse sollicitudin libero et tincidunt scelerisque.',
+                position: 'ABC',
+                year: '2021',
+                topics: []
+            }
+        ]
+    },
+    title_contact: "Interested to work together? Let's talk",
+    tell_phone: '+84939461842',
+    lat: '106.794186',
+    long: '10.8454575'
 };
 

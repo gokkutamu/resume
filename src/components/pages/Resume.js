@@ -6,13 +6,11 @@ import { useInfo } from '../../config/data/info';
 export default function Resume() {
     return (
         <>
-            <Div.Grid item className="resume" id="resume">
+            <Div.Grid item className="skill py-4" id="skill">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-11 mx-auto col-12">
-                            <div className="col-lg-8 mx-auto text-center">
-                                <h4>Skills</h4>
-                            </div>
+                        <div className="col-lg-12 mx-auto col-12">
+                            <h4 className="mb-4">Skills</h4>
                             <Div.Box component="section" className="carousel-item active" width={{ xs: '100%', md: '100%' }} mb="4rem" borderRadius="0.5rem">
                                 <div className="old-carousel">
                                     <div className="old-carousel-emoji">
@@ -73,14 +71,11 @@ export default function Resume() {
                 </div>
             </Div.Grid>
 
-            <Div.Grid item className="resume py-5" id="resume">
+            <Div.Grid item className="hobbies py-4" id="hobbies">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-11 text-center mx-auto col-12">
-                            <div className="col-lg-8 mx-auto text-center">
-                                <h4>Hobbies/Interests</h4>
-                            </div>
-
+                        <div className="col-lg-12 mx-auto col-12">
+                            <h4 className="mb-4">Hobbies/Interests</h4>
                             <Div.Box component="section" width={{ xs: '100%', md: '100%' }} mb="4rem" borderRadius="0.5rem">
                                 <div className="old-carousel">
                                     <div className="old-carousel-emoji">
