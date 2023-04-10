@@ -1,7 +1,7 @@
 export const Navigate = [
     {
         name: 'Home',
-        to: '/',
+        to: '#home',
         active: 'home',
     },
     {

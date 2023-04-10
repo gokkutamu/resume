@@ -2,8 +2,7 @@
   "name": "codespaces-react",
   "version": "0.1.0",
   "private": true,
-  "main": "tailwind.config.js",
-  "homepage": "http://gokkutamu.github.io/resume",
+  "homepage": "http://gokkutamu.github.io/",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -19,7 +18,7 @@
     "web-vitals": "^3.1.0"
   },
   "scripts": {
-    "start": "set port=4200 && react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -46,15 +45,10 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
     "framer-motion": "10.8.5",
     "gh-pages": "^5.0.0",
-    "postcss": "^8.4.21",
     "react-countup": "6.4.2",
     "react-icons": "4.8.0",
-    "react-intersection-observer": "9.4.3",
-    "react-scroll": "1.8.9",
-    "react-type-animation": "3.0.1",
-    "tailwindcss": "^3.2.7"
+    "react-intersection-observer": "9.4.3"
   }
 }
