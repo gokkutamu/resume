@@ -152,25 +152,13 @@ footer {
 }
 
 .navbar {
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
     left: 0;
     z-index: 999999;
     will-change: transform;
     transition: transform 200ms linear;
-}
-
-.dark-mode .feature-card .uil,
-.dark-mode .navbar-light .navbar-brand,
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3,
-.dark-mode h4,
-.dark-mode h5,
-.dark-mode h6,
-.dark-mode .color-mode {
-    color: #fff;
 }
 
 .navbar-brand {
