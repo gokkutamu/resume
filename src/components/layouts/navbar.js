@@ -12,7 +12,7 @@ export default function Navbar({ darkMode, click }) {
     const [active, setActive] = React.useState(location.pathname === '#' ? 'home' : location.pathname.slice(1, location.pathname.length));
 
     return (
-        <nav className={`navbar navbar-expand-sm navbar-${handleDarkMode} headroom headroom--not-bottom headroom--pinned headroom--top`}>
+        <nav className={`navbar navbar-expand-sm navbar-${handleDarkMode}`}>
             <div className="container">
                 <ReactDOM.Link to="#" className="navbar-brand">
                     <div className="fa">🕍</div>

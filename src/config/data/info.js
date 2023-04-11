@@ -100,7 +100,7 @@ export const useInfo = {
                 content: 'You can freely use Tooplate templates for your business or personal sites. Suspendisse sollicitudin libero et tincidunt scelerisque.',
                 position: 'ABC',
                 year: '2020',
-                topics: []
+                topics: ['A', 'B', 'C']
             },
             {
                 name_pr: 'PR04',
@@ -111,8 +111,20 @@ export const useInfo = {
             }
         ]
     },
-    title_contact: "Interested to work together? Let's talk",
-    tell_phone: '+84939461842',
+    contacts: [
+        {
+            emoji: '📍',
+            text: 'aaaaaaaaaaaaaaaa'
+        },
+        {
+            emoji: '📮',
+            text: 'ngoctam2303001@gmail.com'
+        },
+        {
+            emoji: '🖁',
+            text: '+84939461842'
+        }
+    ],
     lat: '106.794186',
     long: '10.8454575'
 };

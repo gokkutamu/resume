@@ -41,7 +41,15 @@ export default function Pr() {
                                 <div className="timeline-wrapper" key={key}>
                                     <div className="timeline-yr"><span>{education.year}</span></div>
                                     <div className="timeline-info">
-                                        <h3><span>{education.name_pr}</span><small>{education.position}</small></h3>
+                                        <h3>
+                                            <span>{education.name_pr}</span>
+                                            <small>{education.position}</small>
+                                            <p>
+                                                {education.topics.map((topic, key) => (
+                                                    <button className="btn btn-dark" key={key}>{topic}</button>
+                                                ))}
+                                            </p>
+                                        </h3>
                                         <p>{education.content}</p>
                                     </div>
                                 </div>
