@@ -11,12 +11,12 @@ export default function Home() {
         <Div.Grid item className="home pt-10" id="home">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-5 col-md-12 col-12">
+                    <div className="col-lg-4 col-md-12 col-12">
                         <div className="about-image svg">
-                            <Div.Box component="img" width={{ xs: '80%', md: '100%' }} src="https://www.free-css.com/assets/files/free-css-templates/preview/page270/marvel/assets/images/undraw/undraw_software_engineer_lvl5.svg" className="img-fluid" alt="website template image" />
+                            <Div.Box component="img" width={{ xs: '80%', md: '100%' }} src="http://localhost:3000/assets/img/avatar.gif" className="img-fluid" alt="website template image" />
                         </div>
                     </div>
-                    <div className="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div className="col-lg-8 col-md-12 col-12">
                         <div className="about-text">
                             <small className="small-text">{useInfo.welcome} <span className="mobile-block">{useInfo.portfolio}</span></small>
                             <h1 className="animated animated-text">

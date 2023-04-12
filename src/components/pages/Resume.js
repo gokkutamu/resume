@@ -6,7 +6,7 @@ import { useInfo } from '../../config/data/info';
 export default function Resume() {
     return (
         <>
-            <Div.Grid item className="skill py-4" id="skill">
+            <Div.Grid item className="skill py-5" id="skill">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 mx-auto col-12">
@@ -71,7 +71,7 @@ export default function Resume() {
                 </div>
             </Div.Grid>
 
-            <Div.Grid item className="hobbies py-4" id="hobbies">
+            <Div.Grid item className="hobbies py-5" id="hobbies">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 mx-auto col-12">

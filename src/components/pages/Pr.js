@@ -5,7 +5,7 @@ import { useInfo } from "../../config/data/info";
 
 export default function Pr() {
     return (
-        <Div.Grid item className="resume py-4 text-align-center" id="resume">
+        <Div.Grid item className="resume py-5 text-align-center" id="resume">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 col-12">

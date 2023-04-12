@@ -5,7 +5,7 @@ import { useInfo } from '../../config/data/info';
 
 export default function About() {
     return (
-        <Div.Grid item className="about py-4" id="about">
+        <Div.Grid item className="about py-5" id="about">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 mx-auto col-12">
