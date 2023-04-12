@@ -20,13 +20,13 @@ export default function Contact() {
                     </div>
                     <div className="col-lg-6 mx-auto">
                         <div className="form_contact">
-                            <form action="#" className="contFrm" method="POST">
+                            <form className="contFrm">
                                 <div className="row">
                                     <div className="col-12">
-                                        <textarea className="inptFld" rows="" cols="" placeholder="Your Message..." required></textarea>
+                                        <textarea className="inptFld" name="Message" placeholder="Your Message..." required></textarea>
                                     </div>
                                     <div className="col-12">
-                                        <input type="submit" name="submit" value="Submit" className="inptBtn" />
+                                        <input type="submit" value="Submit" className="inptBtn" />
                                     </div>
                                 </div>
                             </form>

@@ -34,7 +34,7 @@ export default function Home() {
                                 ))}
                             </div>
                             <div className="custom-btn-group mt-4">
-                                <a href="/" className="btn mr-lg-2 custom-btn">
+                                <a href={ useInfo.url } className="btn mr-lg-2 custom-btn">
                                     📥
                                     {useInfo.download}
                                 </a>

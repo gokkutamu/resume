@@ -40,7 +40,7 @@ export default function Base() {
     }, [])
 
     return (
-        <Div.Box className={darkMode ? 'dark' : 'light'}>
+        <div className={darkMode ? 'dark' : 'light'}>
             <Navbar darkMode={darkMode} click={handleToggleDarkMode} />
             <Div.Grid>
                 <Home />
@@ -50,6 +50,6 @@ export default function Base() {
                 <Contact />
             </Div.Grid>
             <Footer />
-        </Div.Box>
+        </div>
     );
 }

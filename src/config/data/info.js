@@ -5,6 +5,7 @@ export const useInfo = {
     lastName: 'Ngoc Tam',
     position: 'Web Developer',
     nameGithub: 'gokkutamu',
+    url: '/',
     download: 'Download Resume',
     bio: "Hello! I'm Tam (Goku). I'm a Web Developer.I studied IT at CD Cong Nghe Thu Duc, I enjoy building web applications and learning new technologies.I love to travel and explore new places. I'm currently based in Vietnamese.",
     miniBio: [
@@ -126,6 +127,7 @@ export const useInfo = {
         }
     ],
     lat: '106.794186',
-    long: '10.8454575'
+    long: '10.8454575',
+    sendMessageUrl: "https://script.google.com/macros/s/AKfycbyst8zz_7-jvNK6WdC564_62hYMqhcGtZH4U1khUmh7isdZU9fnloNIO2sxZwNOB8IB/exec"
 };
 

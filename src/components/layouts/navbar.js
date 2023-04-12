@@ -12,13 +12,15 @@ export default function Navbar({ darkMode, click }) {
     const [active, setActive] = React.useState(location.pathname === '#' ? 'home' : location.pathname.slice(1, location.pathname.length));
 
     return (
-        <nav className={`navbar navbar-expand-sm navbar-${handleDarkMode}`}>
+        <nav className={`navbar navbar-expand-sm navbar-${handleDarkMode} headroom headroom--not-top headroom--not-bottom`}>
             <div className="container">
                 <ReactDOM.Link to="#" className="navbar-brand">
                     <div className="fa">🕍</div>
                     Bay
                 </ReactDOM.Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"></span>
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <Div.Box className="collapse navbar-collapse" id="navbarNav">
