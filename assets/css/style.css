@@ -335,7 +335,7 @@ h1 {
 
 .cat-resume {
     display: flex;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 .list-languages {
@@ -375,12 +375,6 @@ h1 {
     word-break: break-all;
     margin: 0 10px;
 }
-
-/* .carousel-inner {
-    box-shadow: 0 0 1px 1px rgb(140, 140, 140);
-    border-radius: 0.5em;
-    background-color: rgb(39, 36, 47);
-} */
 
 p,
 span,
@@ -637,4 +631,8 @@ form.contFrm {
     background-color: #097e23;
     transform-origin: top left;
     animation-delay: 1.5s;
+}
+
+.about-image img {
+    border-radius: 80px;
 }
