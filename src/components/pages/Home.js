@@ -13,7 +13,7 @@ export default function Home() {
                 <div className="row">
                     <div className="col-lg-4 col-md-12 col-12">
                         <div className="about-image svg">
-                            <Div.Box component="img" width={{ xs: '80%', md: '100%' }} src="http://localhost:3000/assets/img/avatar.gif" className="img-fluid" alt="website template image" />
+                            <Div.Box component="img" width={{ xs: '80%', md: '100%' }} src="assets/img/avatar.gif" className="img-fluid" alt="website template image" />
                         </div>
                     </div>
                     <div className="col-lg-8 col-md-12 col-12">

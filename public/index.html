@@ -77,7 +77,7 @@
     $('body').append('<div id="loading-screen"><div id="loading"><span></span><span></span><span></span><span></span></div></div>');
     $(window).on('load', function () {
       $(".navbar").css('display', 'none');
-      setTimeout(removeLoader, 3000);
+      setTimeout(removeLoader, 2000);
     });
     function removeLoader() {
       $("#loading-screen").fadeOut(500, function () {
