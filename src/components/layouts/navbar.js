@@ -1,45 +1,58 @@
 import * as React from 'react';
-import * as Div from '@mui/material';
-import * as ReactDOM from 'react-router-dom';
 
-import ToggleDarkMode from '../tools/Toggle';
-
-import { Navigate } from '../../config/data/navigate';
-
-export default function Navbar({ darkMode, click }) {
-    const location = ReactDOM.useLocation(); //this.props.location || { pathname: '/' }
-    const handleDarkMode = darkMode ? 'dark' : 'light';
-    const [active, setActive] = React.useState(location.pathname === '#' ? 'home' : location.pathname.slice(1, location.pathname.length));
-
+export default function Navbar() {
     return (
-        <nav className={`navbar navbar-expand-sm navbar-${handleDarkMode} headroom headroom--not-top headroom--not-bottom`}>
-            <div className="container">
-                <ReactDOM.Link to="#" className="navbar-brand">
-                    <div className="fa">🕍</div>
-                    Bay
-                </ReactDOM.Link>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                    <span className="navbar-toggler-icon"></span>
-                    <span className="navbar-toggler-icon"></span>
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <Div.Box className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav mx-auto">
-                        {Navigate.map((link, index) => (
-                            <li className="nav-item" key={index}>
-                                <a href={link.to} onClick={() => setActive(link.active)} className={`nav-link ${link.active === active && !link.type && 'active'}`}>
-                                    <span data-target={link.active}>{link.name}</span>
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                    <ul className="navbar-nav">
-                        <Div.Box className="ml-lg-4">
-                            <ToggleDarkMode darkMode={darkMode} handleClick={click} />
-                        </Div.Box>
-                    </ul>
-                </Div.Box>
-            </div>
+        <nav className="sections-nav-container">
+            <ul id="sections-nav" className="nav sections-nav sections-nav-animated">
+                <li className="sections-nav-item">
+                    <a href="#section-01" className="nav-link sections-nav-link goto-section active">
+                        <span className="sections-nav-counter">01</span>
+                        Top
+                    </a>
+                </li>
+                <li className="sections-nav-item">
+                    <a href="#section-02" className="nav-link sections-nav-link goto-section">
+                        <span className="sections-nav-counter">02</span>
+                        About me
+                    </a>
+                </li>
+                <li className="sections-nav-item">
+                    <a href="#section-03" className="nav-link sections-nav-link goto-section">
+                        <span className="sections-nav-counter">03</span>
+                        Skills
+                    </a>
+                </li>
+                <li className="sections-nav-item">
+                    <a href="#section-04" className="nav-link sections-nav-link goto-section">
+                        <span className="sections-nav-counter">04</span>
+                        Experiences
+                    </a>
+                </li>
+                <li className="sections-nav-item">
+                    <a href="#section-05" className="nav-link sections-nav-link goto-section">
+                        <span className="sections-nav-counter">05</span>
+                        Projects
+                    </a>
+                </li>
+                <li className="sections-nav-item">
+                    <a href="#section-06" className="nav-link sections-nav-link goto-section">
+                        <span className="sections-nav-counter">06</span>
+                        Hobbies/Interests
+                    </a>
+                </li>
+                <li className="sections-nav-item">
+                    <a href="#section-07" className="nav-link sections-nav-link goto-section">
+                        <span className="sections-nav-counter">07</span>
+                        Contact
+                    </a>
+                </li>
+                <li className="sections-nav-item">
+                    <div className="sections-nav-info">
+                        <a href="mailto:ngoctam2303001@gmail.com">ngoctam2303001@gmail.com</a>
+                        <a href="tel:+84939461842">+84 939461842</a>
+                    </div>
+                </li>
+            </ul>
         </nav>
     );
 }
