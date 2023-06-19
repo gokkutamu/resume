@@ -49,7 +49,7 @@ export default function Navbar() {
                 <li className="sections-nav-item">
                     <div className="sections-nav-info">
                         <a href="mailto:ngoctam2303001@gmail.com">ngoctam2303001@gmail.com</a>
-                        <a href="tel:+84939461842">+84 939461842</a>
+                        <p><a href="tel:+84939461842">+84 939461842</a></p>
                     </div>
                 </li>
             </ul>

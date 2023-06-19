@@ -10,7 +10,7 @@ export default function Experiences() {
                 <div className="timeline timeline-animated">
                     <div className="timeline-item">
                         <span className="timeline-date">2022&nbsp;–&nbsp;now</span>
-                        <h3 className="timeline-title">Amazon</h3>
+                        <h3 className="timeline-title">Wancontre . Co., Ltd</h3>
                         <p className="timeline-text">Junior Developer</p>
                     </div>
                     <div className="timeline-item">

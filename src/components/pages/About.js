@@ -10,6 +10,7 @@ export default function About() {
                     <div className="col col-xl-10">
                         <h2 className="section-title animation-translate-overline animation-item-1">About me</h2>
                         <article className="article animation-translate animation-item-2">
+                            <p>{useInfo.bio}</p>
                             {useInfo.about.map((value, index) => (
                                 <p key={index}>{value.content}</p>
                             ))}

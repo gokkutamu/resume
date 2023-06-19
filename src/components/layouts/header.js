@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <section className="header">
             <div className="container-fluid-limited d-flex align-items-center justify-content-between">
-                <a href="/LICENSE" className="header-brand">
+                <a href="/resume" className="header-brand">
                     <img src={useImage.imgLogo} data-light-src={useImage.imgLogo} data-dark-src={useImage.imgLogo} alt="Your logo" />
                     <span>Portfolio</span>
                 </a>
