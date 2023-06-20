@@ -6,7 +6,7 @@ export const useInfo = {
     position: 'Web Developer',
     nameGithub: 'Tr Ng Tam',
     url: '/',
-    download: 'Download Resume',
+    download: 'Download CV',
     bio: "Hello! I'm Tam (Goku). I'm a Web Developer.I studied IT at CD Cong Nghe Thu Duc, I enjoy building web applications and learning new technologies.I love to travel and explore new places. I'm currently based in Vietnamese.",
     nextChapter: 'Next chapter',
     miniBio: [
@@ -145,9 +145,8 @@ export const useInfo = {
     long: '10.8454575',
     sendMessageUrl: "https://script.google.com/macros/s/AKfycbyst8zz_7-jvNK6WdC564_62hYMqhcGtZH4U1khUmh7isdZU9fnloNIO2sxZwNOB8IB/exec"
 };
-
-const urlLocal = "http://localhost:3000/assets/img";
+const urlDomain = "https://gokkutamu.github.io/resume/assets/img";
 export const useImage = {
-    imgLogo: urlLocal + '/' + 'logo.png',
-    imgAvatar: urlLocal + '/' + 'avatar.gif'
+    imgLogo: urlDomain + '/' + 'logo.png',
+    imgAvatar: urlDomain + '/' + 'avatar.gif'
 };

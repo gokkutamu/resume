@@ -18,8 +18,9 @@ export default function Contact() {
                     <div className="col-12 col-md-4">
                         <div className="contact">
                             <strong className="contact-label">MXH</strong>
-                            <a href="https://www.facebook.com">Facebook</a>
-                            <a href="https://www.linked.com">LinekdIn</a>
+                            <a href="https://www.facebook.com/tam.ngoc.5648/" target="_blank" rel="noreferrer">Facebook</a>
+                            <p><a href="https://www.linkedin.com/in/ngoc-tam-036578216/" target="_blank" rel="noreferrer">LinekdIn</a></p>
+                            
                         </div>
                     </div>
                     <div className="col-12 col-md-4">
@@ -54,7 +55,7 @@ export default function Contact() {
                                 <textarea className="form-control" name="message" id="contact-form-message" placeholder="Your message" rows="5" required=""></textarea>
                                 <div className="invalid-feedback">Please type some message.</div>
                             </div>
-                            <button type="submit" className="btn btn-primary">Send</button>
+                            <button type="submit" className="btn btn-two"><span>Send</span></button>
                         </form>
                     </div>
                 </div>

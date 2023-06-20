@@ -8,7 +8,7 @@ export default function Header() {
             <div className="container-fluid-limited d-flex align-items-center justify-content-between">
                 <a href="/resume" className="header-brand">
                     <img src={useImage.imgLogo} data-light-src={useImage.imgLogo} data-dark-src={useImage.imgLogo} alt="Your logo" />
-                    <span>Portfolio</span>
+                    <span className="header-title">Portfolio</span>
                 </a>
                 <button className="sections-nav-toggler" aria-label="Toggle navigation">
                     <span className="sections-nav-toggler-bar"></span>

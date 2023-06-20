@@ -10218,23 +10218,27 @@ input:-webkit-autofill,input:-webkit-autofill:active,input:-webkit-autofill:focu
     left: 0;
     right: 0;
     height: 70px;
-    height: 5rem;
+    height: 4.25rem;
     padding: 1rem 0;
     background-color: #000;
-    z-index: 1030
+    z-index: 1030;
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
 }
 
 .header-brand {
     height: 14px;
-    height: 4rem;
+    height: 3.45rem;
     display: block
 }
 
 .header-brand>img {
-    display: block;
     height: 50px;
     width: auto;
     border-radius: 20px;
+}
+
+.header-title {
+    margin: auto 10px;
 }
 
 .with-header {
