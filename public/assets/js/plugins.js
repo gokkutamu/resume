@@ -18342,7 +18342,7 @@ $(function () {
     });
 });
 
-/*const disabledKeys = ["c", "C", "x", "J", "u", "I"];
+const disabledKeys = ["c", "C", "x", "J", "u", "I"];
 const showAlert = e => {
     e.preventDefault();
     return;
@@ -18363,7 +18363,7 @@ window.addEventListener("load", function () {
     } catch (n) {
         setTimeout(t, 100)
     }
-});*/
+});
 
 (function() {
 
