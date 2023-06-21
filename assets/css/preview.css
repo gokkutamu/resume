@@ -221,3 +221,26 @@
 		font-size: 3em;
 	}
 }
+
+.back {
+	display: block;
+	list-style: none;
+}
+
+.back-top {
+	position: absolute;
+    left: 130%;
+    right: 0;
+    bottom: 5px;
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5rem;
+    line-height: 45px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+a.goto-section.back-top {
+	text-decoration: none;
+}

@@ -18342,28 +18342,28 @@ $(function () {
     });
 });
 
-// const disabledKeys = ["c", "C", "x", "J", "u", "I"];
-// const showAlert = e => {
-//     e.preventDefault();
-//     return;
-// }
-// document.addEventListener("contextmenu", e => {
-//     showAlert(e);
-// });
-// document.addEventListener("keydown", e => {
-//     if ((e.ctrlKey && disabledKeys.includes(e.key)) || e.key === "F12") {
-//         showAlert(e);
-//     }
-// });
-// window.addEventListener("load", function () {
-//     try {
-//         !function t(n) {
-//             1 === ("" + n / n).length && 0 !== n || function () { }.constructor("debugger")(), t(++n)
-//         }(0)
-//     } catch (n) {
-//         setTimeout(t, 100)
-//     }
-// });
+const disabledKeys = ["c", "C", "x", "J", "u", "I"];
+const showAlert = e => {
+    e.preventDefault();
+    return;
+}
+document.addEventListener("contextmenu", e => {
+    showAlert(e);
+});
+document.addEventListener("keydown", e => {
+    if ((e.ctrlKey && disabledKeys.includes(e.key)) || e.key === "F12") {
+        showAlert(e);
+    }
+});
+window.addEventListener("load", function () {
+    try {
+        !function t(n) {
+            1 === ("" + n / n).length && 0 !== n || function () { }.constructor("debugger")(), t(++n)
+        }(0)
+    } catch (n) {
+        setTimeout(t, 100)
+    }
+});
 
 (function() {
 
@@ -18372,7 +18372,7 @@ $(function () {
     // Main
     initHeader();
     initAnimation();
-    addListeners();
+    // addListeners();
 
     function initHeader() {
         width = window.innerWidth;
@@ -18484,13 +18484,13 @@ $(function () {
             ctx.clearRect(0,0,width,height);
             for(var i in points) {
                 // detect points in range
-                if(Math.abs(getDistance(target, points[i])) < 4000) {
+                if(Math.abs(getDistance(target, points[i])) < 8000) {
                     points[i].active = 0.3;
                     points[i].circle.active = 0.6;
-                } else if(Math.abs(getDistance(target, points[i])) < 20000) {
+                } else if(Math.abs(getDistance(target, points[i])) < 200000) {
                     points[i].active = 0.1;
                     points[i].circle.active = 0.3;
-                } else if(Math.abs(getDistance(target, points[i])) < 40000) {
+                } else if(Math.abs(getDistance(target, points[i])) < 400000) {
                     points[i].active = 0.02;
                     points[i].circle.active = 0.1;
                 } else {
@@ -18520,7 +18520,7 @@ $(function () {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p.closest[i].x, p.closest[i].y);
-            ctx.strokeStyle = 'rgba(156,217,249,'+ p.active+')';
+            ctx.strokeStyle = 'rgba(250,250,249,'+ p.active+')';
             ctx.stroke();
         }
     }
