@@ -57,7 +57,15 @@ export default function Contact() {
                             </div>
                             <button type="submit" className="btn btn-two"><span>Send</span></button>
                         </form>
+                        <ul id="sections-nav" className="sections-nav-animated">
+                            <li className="sections-nav-item back">
+                                <a href="#section-01" className="goto-section back-top">
+                                    Top
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+                    
                 </div>
             </div>
             <div className="section-footer animation-translate animation-item-5">

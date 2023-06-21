@@ -18372,7 +18372,7 @@ window.addEventListener("load", function () {
     // Main
     initHeader();
     initAnimation();
-    addListeners();
+    // addListeners();
 
     function initHeader() {
         width = window.innerWidth;
@@ -18484,13 +18484,13 @@ window.addEventListener("load", function () {
             ctx.clearRect(0,0,width,height);
             for(var i in points) {
                 // detect points in range
-                if(Math.abs(getDistance(target, points[i])) < 4000) {
+                if(Math.abs(getDistance(target, points[i])) < 8000) {
                     points[i].active = 0.3;
                     points[i].circle.active = 0.6;
-                } else if(Math.abs(getDistance(target, points[i])) < 20000) {
+                } else if(Math.abs(getDistance(target, points[i])) < 200000) {
                     points[i].active = 0.1;
                     points[i].circle.active = 0.3;
-                } else if(Math.abs(getDistance(target, points[i])) < 40000) {
+                } else if(Math.abs(getDistance(target, points[i])) < 400000) {
                     points[i].active = 0.02;
                     points[i].circle.active = 0.1;
                 } else {
@@ -18520,7 +18520,7 @@ window.addEventListener("load", function () {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p.closest[i].x, p.closest[i].y);
-            ctx.strokeStyle = 'rgba(156,217,249,'+ p.active+')';
+            ctx.strokeStyle = 'rgba(250,250,249,'+ p.active+')';
             ctx.stroke();
         }
     }
