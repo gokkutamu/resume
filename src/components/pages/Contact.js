@@ -4,7 +4,7 @@ import { useInfo } from "../../config/data/info";
 
 export default function Contact() {
     return (
-        <section id="section-07" className="section animation interaction-in">
+        <section id="section-07" className="section animation">
             <div className="section-body">
                 <h2 className="section-title animation-translate-overline animation-item-1">Contact</h2>
                 <div className="row mb-10 animation-translate animation-item-2">

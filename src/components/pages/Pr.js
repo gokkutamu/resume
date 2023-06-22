@@ -4,7 +4,7 @@ import { useInfo } from '../../config/data/info';
 
 export default function Project() {
     return (
-        <section id="section-05" className="section animation interaction-in">
+        <section id="section-05" className="section animation">
             <div className="section-body">
                 <h2 className="section-title animation-translate-overline animation-item-1">Projects</h2>
                 <div className="row animation-translate animation-item-2">
