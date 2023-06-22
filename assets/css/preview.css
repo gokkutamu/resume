@@ -175,25 +175,6 @@
 }
 
 /* Header */
-.large-header {
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center center;
-	z-index: 1;
-}
-
-#demo-canvas {
-	width: 100% !important;
-    height: 100% !important;
-    position: fixed !important;
-    z-index: -1 !important;
-    top: 0px !important;
-    left: 0px !important;
-    pointer-events: none;
-}
-
 .main-title {
 	position: absolute;
 	margin: 0;

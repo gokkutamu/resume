@@ -346,7 +346,8 @@ template {
 .lead {
     font-size: 14px;
     font-size: 1rem;
-    font-weight: 700
+    font-weight: 700;
+    color: darkgoldenrod;
 }
 
 .display-1 {
@@ -14193,12 +14194,13 @@ a.badge-danger.focus,a.badge-danger:focus {
     position: absolute;
     left: 0;
     right: 0;
-    top: 40%;
-    bottom: 40%;
+    top: 50%;
+    bottom: 50%;
     background-color: hsla(0,0%,100%,.75);
     -webkit-transform: translate(0);
     -ms-transform: translate(0);
-    transform: translate(0)
+    transform: translate(0);
+    height: 5px;
 }
 
 .interaction-in.animation-translate,.interaction-in .animation-translate {
