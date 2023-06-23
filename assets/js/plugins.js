@@ -18342,25 +18342,25 @@ $(function () {
     });
 });
 
-// const disabledKeys = ["c", "C", "x", "J", "u", "I"];
-// const showAlert = e => {
-//     e.preventDefault();
-//     return;
-// }
-// document.addEventListener("contextmenu", e => {
-//     showAlert(e);
-// });
-// document.addEventListener("keydown", e => {
-//     if ((e.ctrlKey && disabledKeys.includes(e.key)) || e.key === "F12") {
-//         showAlert(e);
-//     }
-// });
-// window.addEventListener("load", function () {
-//     try {
-//         !function t(n) {
-//             1 === ("" + n / n).length && 0 !== n || function () { }.constructor("debugger")(), t(++n)
-//         }(0)
-//     } catch (n) {
-//         setTimeout(t, 100)
-//     }
-// });
+const disabledKeys = ["c", "C", "x", "J", "u", "I"];
+const showAlert = e => {
+    e.preventDefault();
+    return;
+}
+document.addEventListener("contextmenu", e => {
+    showAlert(e);
+});
+document.addEventListener("keydown", e => {
+    if ((e.ctrlKey && disabledKeys.includes(e.key)) || e.key === "F12") {
+        showAlert(e);
+    }
+});
+window.addEventListener("load", function () {
+    try {
+        !function t(n) {
+            1 === ("" + n / n).length && 0 !== n || function () { }.constructor("debugger")(), t(++n)
+        }(0)
+    } catch (n) {
+        setTimeout(t, 100)
+    }
+});
