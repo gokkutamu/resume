@@ -42,7 +42,7 @@ export default function Project() {
             </div>
             <div className="section-footer animation-translate animation-item-3">
                 <a className="section-next goto-section" href="#section-06">
-                    <span className="section-next-counter">05/10</span>
+                    <span className="section-next-counter">05/07</span>
                     <span className="section-next-label">{ useInfo.nextChapter }</span>
                     <span className="section-next-icon"></span>
                 </a>
