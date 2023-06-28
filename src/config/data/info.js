@@ -4,10 +4,11 @@ export const useInfo = {
     firstName: 'Tran',
     lastName: 'Ngoc Tam',
     position: 'Web Developer',
-    nameGithub: 'gokkutamu',
+    nameGithub: 'Tr Ng Tam',
     url: '/',
-    download: 'Download Resume',
+    download: 'Download CV',
     bio: "Hello! I'm Tam (Goku). I'm a Web Developer.I studied IT at CD Cong Nghe Thu Duc, I enjoy building web applications and learning new technologies.I love to travel and explore new places. I'm currently based in Vietnamese.",
+    nextChapter: 'Next chapter',
     miniBio: [
         {
             emoji: '🏴󠁶󠁮󠁳󠁧󠁿',
@@ -60,24 +61,28 @@ export const useInfo = {
             'NPM',
         ],
     },
-    hobbies: [
-        {
-            label: 'Adopt Fish',
-            emoji: '🐠',
-        },
-        {
-            label: 'Listen Music',
-            emoji: '🎶',
-        },
-        {
-            label: 'Anime',
-            emoji: '🎬',
-        },
-        {
-            label: 'Traveling',
-            emoji: '✈️',
-        }
-    ],
+    hobbies: {
+        first: [
+            {
+                label: 'Adopt Fish',
+                emoji: '🐠',
+            },
+            {
+                label: 'Listen Music',
+                emoji: '🎶',
+            },
+        ],
+        last: [
+            {
+                label: 'Anime',
+                emoji: '🎬',
+            },
+            {
+                label: 'Traveling',
+                emoji: '✈️',
+            }
+        ],
+    },
     projects: {
         experiences: [
             {
@@ -126,8 +131,22 @@ export const useInfo = {
             text: '+84939461842'
         }
     ],
+    about: [
+        {
+            content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor" +
+                "invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        },
+        {
+            content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor" +
+                "invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        }
+    ],
     lat: '106.794186',
     long: '10.8454575',
     sendMessageUrl: "https://script.google.com/macros/s/AKfycbyst8zz_7-jvNK6WdC564_62hYMqhcGtZH4U1khUmh7isdZU9fnloNIO2sxZwNOB8IB/exec"
 };
-
+const urlDomain = "https://gokkutamu.github.io/resume/assets/img";
+export const useImage = {
+    imgLogo: urlDomain + '/' + 'logo.png',
+    imgAvatar: urlDomain + '/' + 'avatar.gif'
+};

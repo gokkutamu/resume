@@ -2,91 +2,42 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Resume app" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Resume</title>
+	<meta charset="utf-8" />
+	<link rel="icon" href="./assets/img/fac.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#000000" />
+	<meta name="description" content="Tr Ng Tam" />
+	<link rel="apple-touch-icon" href="./assets/img/logo.png" />
+	<link rel="shortcut icon" href="./assets/img/fac.ico" type="image/x-icon">
+	<link rel="icon" href="./assets/img/logo.png" sizes="any" type="image/svg+xml">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/preview.css">
+	<title>Tr Ng Tam</title>
 </head>
 
-<body>
-  <div id="root"></div>
+<body class="with-header position-relative" data-spy="scroll" data-target="#sections-nav" data-offset="80">
+	<div id="root"></div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="assets/js/plugins.js"></script>
 <script>
-  $(function () {
-    var _preScroll = 0;
-    $(window).scroll(function () {
-      var currentScroll = $(this).scrollTop();
-
-      if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()) {
-        if (currentScroll > _preScroll) {
-          window.setTimeout(hideNav, 300);
-        } else {
-          window.setTimeout(showNav, 300);
-        }
-        if (currentScroll < 10) {
-          displayTop();
-        } else if (currentScroll >= 2000) {
-          displayBottom();
-        }
-
-        _preScroll = currentScroll;
-      }
-    });
-    function hideNav() {
-      $(".navbar").removeClass("headroom--pinned").addClass("headroom--unpinned");
-    }
-    function showNav() {
-      $(".navbar").removeClass("headroom--unpinned").addClass("headroom--pinned");
-    }
-    function displayTop() {
-      $('.navbar').addClass("headroom--top headroom--not-bottom").removeClass('headroom--bottom headroom--not-top');
-    }
-    function displayBottom() {
-      $('.navbar').addClass("headroom--bottom headroom--not-top").removeClass('headroom--top headroom--not-bottom');
-    }
-
-    $('.inptBtn').click((e) => {
-      e.preventDefault();
-
-      $.ajax({
-        url: 'https://script.google.com/macros/s/AKfycbyst8zz_7-jvNK6WdC564_62hYMqhcGtZH4U1khUmh7isdZU9fnloNIO2sxZwNOB8IB/exec',
-        type: 'POST',
-        dataType: 'json',
-        data: $('.contFrm').serialize(),
-        success: function (data) {
-          if (data.result === 'success') {
-            window.alert('Your headroom has been successfully created.');
-            window.location.reload();
-          }
-        }
-      });
-    });
-
-    $('body').append('<div id="loading-screen"><div id="loading"><span></span><span></span><span></span><span></span></div></div>');
-    $(window).on('load', function () {
-      $(".navbar").css('display', 'none');
-      setTimeout(removeLoader, 2000);
-    });
-    function removeLoader() {
-      $("#loading-screen").fadeOut(500, function () {
-        $("#loading-screen").remove();
-        $(".navbar").css('display', 'block');
-      });
-    }
-  })
-
+	// Bootstrap form validation example
+	(function() {
+		'use strict';
+		window.addEventListener('load', function() {
+			var forms = document.getElementsByClassName('needs-validation');
+			var validation = Array.prototype.filter.call(forms, function(form) {
+				form.addEventListener('submit', function(event) {
+					if (form.checkValidity() === false) {
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					form.classList.add('was-validated');
+				}, false);
+			});
+		}, false);
+	})();
 </script>
 
 </html>

@@ -1,36 +1,30 @@
 import * as React from 'react';
-import * as Div from '@mui/material';
 
 import { useInfo } from '../../config/data/info';
 
 export default function About() {
     return (
-        <Div.Grid item className="about py-5" id="about">
-            <div className="container">
+        <section id="section-02" className="section animation">
+            <div className="section-body">
                 <div className="row">
-                    <div className="col-lg-12 mx-auto col-12">
-                        <h4 className="mb-4">About me</h4>
-                        <Div.Box component="section" className="carousel-item active"  width={{ xs: '100%', md: '100%' }} mb="4rem" borderRadius="0.5rem">
-                            <div className="old-carousel">
-                                <div className="old-carousel-emoji">
-                                    🔴🟡🟢
-                                </div>
-                            </div>
-                            <div className="main-carousel">
-                                <p className="cat-resume">
-                                    <span style={{ color: 'rgb(0, 255, 164)' }}>{useInfo.nameGithub} $ </span>
-                                    &nbsp;
-                                    cat {useInfo.nameGithub}
-                                </p>
-                                <span style={{ color: 'rgb(0, 255, 164)', margin: '0 5px' }}>{useInfo.nameGithub} (main) $ </span>
-                                <span className="title-information">
-                                    {useInfo.bio}
-                                </span>
-                            </div>
-                        </Div.Box>
+                    <div className="col col-xl-10">
+                        <h2 className="section-title animation-translate-overline animation-item-1">About me</h2>
+                        <article className="article animation-translate animation-item-2">
+                            <p>{useInfo.bio}</p>
+                            {/* {useInfo.about.map((value, index) => (
+                                <p key={index}>{value.content}</p>
+                            ))} */}
+                        </article>
                     </div>
                 </div>
             </div>
-        </Div.Grid>
+            <div className="section-footer animation-translate animation-item-3">
+                <a className="section-next goto-section" href="#section-03">
+                    <span className="section-next-counter">02/07</span>
+                    <span className="section-next-label">{ useInfo.nextChapter }</span>
+                    <span className="section-next-icon"></span>
+                </a>
+            </div>
+        </section>
     );
 }

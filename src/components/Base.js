@@ -1,55 +1,35 @@
 import * as React from 'react';
-import * as Div from '@mui/material';
 
 import Navbar from './layouts/navbar';
 import About from './pages/About';
-import Resume from './pages/Resume';
 import Home from './pages/Home';
-import Pr from './pages/Pr';
 import Contact from './pages/Contact';
-import Footer from './layouts/footer';
+import Header from './layouts/header';
+import Skills from './pages/Skills';
+import Experiences from './pages/Experiences'; 
+import Project from './pages/Pr';
+import HobbiesAndInterests from './pages/HI';
 
 export default function Base() {
-    const [darkMode, setDarkMode] = React.useState(false);
-
-    function handleToggleDarkMode() {
-        let oppositeOfCurrentDarkMode = !darkMode;
-        localStorage.setItem('darkMode', `${oppositeOfCurrentDarkMode}`);
-        setDarkMode(oppositeOfCurrentDarkMode);
-
-    }
-
-    React.useEffect(() => {
-        let removeDarkMode = JSON.parse(localStorage.getItem('darkMode'));
-        const queryDarkMode = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
-
-        if (removeDarkMode) {
-            setDarkMode(removeDarkMode);
-        } else {
-            localStorage.setItem('darkMode', `${!queryDarkMode?.matches}`);
-        }
-
-        // Update dark mode on window resize.
-        const updateDarkMode = (query) => {
-            setDarkMode(query?.matches);
-        }
-
-        if (queryDarkMode) {
-            queryDarkMode.addEventListener('change', updateDarkMode);
-        }
-    }, [])
-
     return (
-        <div className={darkMode ? 'dark' : 'light'}>
-            <Navbar darkMode={darkMode} click={handleToggleDarkMode} />
-            <Div.Grid>
-                <Home />
-                <About />
-                <Resume />
-                <Pr />
-                <Contact />
-            </Div.Grid>
-            <Footer />
+        <div>
+            <Header/>
+            <Navbar/>
+            <main className="content">
+                <div className="container-fluid-limited">
+                    <div className="row">
+                        <div className="col col-xl-9">
+                            <Home/>
+                            <About/>
+                            <Skills/>
+                            <Experiences/>
+                            <Project/>
+                            <HobbiesAndInterests/>
+                            <Contact/>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
     );
 }
