@@ -11,9 +11,9 @@ export default function About() {
                         <h2 className="section-title animation-translate-overline animation-item-1">About me</h2>
                         <article className="article animation-translate animation-item-2">
                             <p>{useInfo.bio}</p>
-                            {useInfo.about.map((value, index) => (
+                            {/* {useInfo.about.map((value, index) => (
                                 <p key={index}>{value.content}</p>
-                            ))}
+                            ))} */}
                         </article>
                     </div>
                 </div>

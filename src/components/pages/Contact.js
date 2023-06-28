@@ -4,7 +4,7 @@ import { useInfo } from "../../config/data/info";
 
 export default function Contact() {
     return (
-        <section id="section-07" className="section animation interaction-in">
+        <section id="section-07" className="section animation">
             <div className="section-body">
                 <h2 className="section-title animation-translate-overline animation-item-1">Contact</h2>
                 <div className="row mb-10 animation-translate animation-item-2">
@@ -18,8 +18,9 @@ export default function Contact() {
                     <div className="col-12 col-md-4">
                         <div className="contact">
                             <strong className="contact-label">MXH</strong>
-                            <a href="https://www.facebook.com">Facebook</a>
-                            <a href="https://www.linked.com">LinekdIn</a>
+                            <a href="https://www.facebook.com/tam.ngoc.5648/" target="_blank" rel="noreferrer">Facebook</a>
+                            <p><a href="https://www.linkedin.com/in/ngoc-tam-036578216/" target="_blank" rel="noreferrer">LinekdIn</a></p>
+                            
                         </div>
                     </div>
                     <div className="col-12 col-md-4">
@@ -54,9 +55,17 @@ export default function Contact() {
                                 <textarea className="form-control" name="message" id="contact-form-message" placeholder="Your message" rows="5" required=""></textarea>
                                 <div className="invalid-feedback">Please type some message.</div>
                             </div>
-                            <button type="submit" className="btn btn-primary">Send</button>
+                            <button type="submit" className="btn btn-two"><span>Send</span></button>
                         </form>
+                        <ul id="sections-nav" className="sections-nav-animated">
+                            <li className="sections-nav-item back">
+                                <a href="#section-01" className="goto-section back-top">
+                                    Top
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+                    
                 </div>
             </div>
             <div className="section-footer animation-translate animation-item-5">

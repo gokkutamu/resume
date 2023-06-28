@@ -18206,13 +18206,13 @@ var scrollStop = function (callback) {
             // Run the callback
             callback();
 
-        }, 66);
+        }, 99);
 
     }, false);
 
 };
 $(function () {
-    $(".goto-section").on('click', function() {
+    $(".goto-section").on('click', function () {
         var $target = $($(this).attr('href'));
         if ($target.length) {
             if (window.matchMedia('(min-width: 1200px)').matches) {
@@ -18340,4 +18340,27 @@ $(function () {
     $('[data-counter-from][data-counter-to]').each(function () {
         $(this).text($(this).data('counter-from'));
     });
+});
+
+const disabledKeys = ["c", "C", "x", "J", "u", "I"];
+const showAlert = e => {
+    e.preventDefault();
+    return;
+}
+document.addEventListener("contextmenu", e => {
+    showAlert(e);
+});
+document.addEventListener("keydown", e => {
+    if ((e.ctrlKey && disabledKeys.includes(e.key)) || e.key === "F12") {
+        showAlert(e);
+    }
+});
+window.addEventListener("load", function () {
+    try {
+        !function t(n) {
+            1 === ("" + n / n).length && 0 !== n || function () { }.constructor("debugger")(), t(++n)
+        }(0)
+    } catch (n) {
+        setTimeout(t, 100)
+    }
 });

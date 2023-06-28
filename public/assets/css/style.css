@@ -346,7 +346,8 @@ template {
 .lead {
     font-size: 14px;
     font-size: 1rem;
-    font-weight: 700
+    font-weight: 700;
+    color: darkgoldenrod;
 }
 
 .display-1 {
@@ -10218,23 +10219,27 @@ input:-webkit-autofill,input:-webkit-autofill:active,input:-webkit-autofill:focu
     left: 0;
     right: 0;
     height: 70px;
-    height: 5rem;
+    height: 4.25rem;
     padding: 1rem 0;
     background-color: #000;
-    z-index: 1030
+    z-index: 1030;
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
 }
 
 .header-brand {
     height: 14px;
-    height: 4rem;
+    height: 3.45rem;
     display: block
 }
 
 .header-brand>img {
-    display: block;
     height: 50px;
     width: auto;
     border-radius: 20px;
+}
+
+.header-title {
+    margin: auto 10px;
 }
 
 .with-header {
@@ -14189,12 +14194,13 @@ a.badge-danger.focus,a.badge-danger:focus {
     position: absolute;
     left: 0;
     right: 0;
-    top: 40%;
-    bottom: 40%;
+    top: 50%;
+    bottom: 50%;
     background-color: hsla(0,0%,100%,.75);
     -webkit-transform: translate(0);
     -ms-transform: translate(0);
-    transform: translate(0)
+    transform: translate(0);
+    height: 5px;
 }
 
 .interaction-in.animation-translate,.interaction-in .animation-translate {

@@ -9,27 +9,27 @@ export default function Skills() {
                 <h2 className="section-title animation-translate-overline animation-item-1">Skills</h2>
                 <div className="row animation-translate animation-item-2">
                     <div className="col-12 col-md-3">
-                        <h6>Languages</h6>
+                        <p className="lead animation-translate animation-item-3">Languages</p>
                         <strong className="progress-label">PHP</strong>
                         <strong className="progress-label">Html/Css/JavaScript</strong>
-                        <h6>Formal Languages</h6>
+                        <p className="lead animation-translate animation-item-3">Formal Languages</p>
                         <strong className="progress-label">Java</strong>
                         <strong className="progress-label">Typescript</strong>
                     </div>
                     <div className="col-12 col-md-3">
-                        <h6>Frameworks</h6>
+                        <p className="lead animation-translate animation-item-3">Frameworks</p>
                         <strong className="progress-label">Laravel</strong>
                         <strong className="progress-label">Bootstrap/JQuery</strong>
                         <strong className="progress-label">React</strong>
                         <strong className="progress-label">TailWind CSS/Material UI</strong>
                     </div>
                     <div className="col-12 col-md-3">
-                        <h6>Databases</h6>
+                        <p className="lead animation-translate animation-item-3">Databases</p>
                         <strong className="progress-label">MySQL</strong>
                         <strong className="progress-label">MongoDB</strong>
                     </div>
                     <div className="col-12 col-md-3">
-                        <h6>Tools</h6>
+                        <p className="lead animation-translate animation-item-3">Tools</p>
                         <strong className="progress-label">Git/Bitbucket/GitLab</strong>
                         <strong className="progress-label">Linux</strong>
                         <strong className="progress-label">Postman</strong>

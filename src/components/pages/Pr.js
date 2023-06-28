@@ -4,12 +4,12 @@ import { useInfo } from '../../config/data/info';
 
 export default function Project() {
     return (
-        <section id="section-05" className="section animation interaction-in">
+        <section id="section-05" className="section animation">
             <div className="section-body">
                 <h2 className="section-title animation-translate-overline animation-item-1">Projects</h2>
                 <div className="row animation-translate animation-item-2">
                     <div className="col-12 col-md-4">
-                        <a className="card" href="https://github.com/gokkutamu/php__booking__cars" rel="noreferrer">
+                        <a className="card" href="https://github.com/gokkutamu/php__booking__cars" target="_blank" rel="noreferrer">
                             {/* <img className="card-img-top" src="" alt="" /> */}
                             <div className="card-body">
                                 <h3 className="card-title">Yotrip</h3>
@@ -19,7 +19,7 @@ export default function Project() {
                         </a>
                     </div>
                     <div className="col-12 col-md-4">
-                        <a className="card" href="https://github.com/gokkutamu/Nhom6_Be2_St4" rel="noreferrer">
+                        <a className="card" href="https://github.com/gokkutamu/Nhom6_Be2_St4" target="_blank" rel="noreferrer">
                             {/* <img className="card-img-top" src="" alt="" /> */}
                             <div className="card-body">
                                 <h3 className="card-title">Fruit and vegetable e-shop</h3>
@@ -29,7 +29,7 @@ export default function Project() {
                         </a>
                     </div>
                     <div className="col-12 col-md-4">
-                        <a className="card" href="https://github.com/gokkutamu/PHP-Web2-Ck-V1" rel="noreferrer">
+                        <a className="card" href="https://github.com/gokkutamu/PHP-Web2-Ck-V1" target="_blank" rel="noreferrer">
                             {/* <img className="card-img-top" src="" alt="" /> */}
                             <div className="card-body">
                                 <h3 className="card-title">Selling cake e-shop</h3>
@@ -42,7 +42,7 @@ export default function Project() {
             </div>
             <div className="section-footer animation-translate animation-item-3">
                 <a className="section-next goto-section" href="#section-06">
-                    <span className="section-next-counter">05/10</span>
+                    <span className="section-next-counter">05/07</span>
                     <span className="section-next-label">{ useInfo.nextChapter }</span>
                     <span className="section-next-icon"></span>
                 </a>
